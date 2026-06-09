@@ -9,7 +9,7 @@ import { Ionicons } from '@expo/vector-icons';
 import * as Speech from 'expo-speech';
 
 // ── Change this to your laptop's local IP ──────────────────────────────────
-const API_URL = 'http://10.52.3.137:8000';
+const API_URL = 'ayurvedic-backend-production.up.railway.app';
 // ───────────────────────────────────────────────────────────────────────────
 
 export default function App() {
@@ -59,10 +59,10 @@ export default function App() {
           allowsRecordingIOS: true,
           playsInSilentModeIOS: true,
         });
-        
+
         setIsRecording(true);
         setMessage(''); // Clear previous messages
-        
+
         const { recording } = await Audio.Recording.createAsync(
           Audio.RecordingOptionsPresets.HIGH_QUALITY
         );
@@ -135,14 +135,14 @@ export default function App() {
         console.error('API error', response.status, text);
         throw new Error(`Server responded with ${response.status}`);
       }
-      
+
       const data = await response.json();
-      
+
       // Update text input with the recognized query
       if (data.original_query) {
         setQuery(data.original_query);
       }
-      
+
       setResults(data.plants || []);
       setMessage(data.message);
 
@@ -160,7 +160,7 @@ export default function App() {
             shouldDuckAndroid: true,
           });
         } catch (e) { console.warn(e); }
-        
+
         // Delay to let hardware switch routes completely
         await new Promise(resolve => setTimeout(resolve, 800));
 
@@ -170,20 +170,20 @@ export default function App() {
         explanation = explanation.replace(/\*/g, ''); // Remove markdown bold/italic asterisks
         // Read only the first two sentences for brevity
         const shortExplanation = explanation.split(/(?<=[.!?])\s+/).slice(0, 2).join(' ');
-        
+
         let speechText = `I found ${plantName}. ${shortExplanation}`;
-        
+
         // Add dosage information if available
         if (topPlant.formatted_dosage && topPlant.formatted_dosage.dose) {
           // Replace | with a space for natural speech
           const cleanDose = topPlant.formatted_dosage.dose.replace(/\s*\|\s*/g, ' ');
           speechText += ` The recommended dosage is ${cleanDose}.`;
-          
+
           if (topPlant.formatted_dosage.part_used) {
             speechText += ` Using the ${topPlant.formatted_dosage.part_used}.`;
           }
         }
-        
+
         Speech.speak(speechText, { rate: 0.95, volume: 1.0 });
       } else if (data.message) {
         Speech.speak(data.message.replace(/\*/g, ''), { rate: 0.95, volume: 1.0 });
@@ -262,8 +262,8 @@ export default function App() {
           onSubmitEditing={searchSymptoms}
           returnKeyType="search"
         />
-        <TouchableOpacity 
-          style={[styles.voiceButton, isRecording && styles.voiceButtonRecording]} 
+        <TouchableOpacity
+          style={[styles.voiceButton, isRecording && styles.voiceButtonRecording]}
           onPress={isRecording ? stopRecording : startRecording}
         >
           <Ionicons name={isRecording ? "stop" : "mic"} size={24} color="#fff" />
