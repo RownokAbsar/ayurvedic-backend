@@ -49,7 +49,13 @@ def _add_image_urls(plants: list, request: Request):
         for loc in plant.get("nearby_locations", []):
             if loc.get("specimen_photo"):
                 photo_path = loc["specimen_photo"].replace("data/images/", "", 1) if loc["specimen_photo"].startswith("data/images/") else loc["specimen_photo"]
-                loc["specimen_photo_url"] = f"{base_url}/images/{photo_path}"
+                # Fix Windows vs Linux case sensitivity (.JPEG -> .jpeg)
+                if photo_path.endswith(".JPEG"):
+                    photo_path = photo_path[:-5] + ".jpeg"
+                import urllib.parse
+                # Safely encode spaces and special characters for URLs
+                safe_photo_path = urllib.parse.quote(photo_path)
+                loc["specimen_photo_url"] = f"{base_url}/images/{safe_photo_path}"
     return plants
 
 
