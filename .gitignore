@@ -44,7 +44,6 @@ __MACOSX/
 
 # Project Specific Data & Caches
 data/audio_cache/
-data/vector_store/
 *.pdf
 
 # Mobile specific ignores are handled in mobile/.gitignore, but adding a few global fallbacks
