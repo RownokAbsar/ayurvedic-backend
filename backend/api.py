@@ -33,6 +33,8 @@ def _add_image_urls(plants: list, request: Request):
     in-memory plant dict was mutated by a previous request.
     """
     base_url = str(request.base_url).rstrip("/")
+    if "up.railway.app" in base_url or "onrender.com" in base_url:
+        base_url = base_url.replace("http://", "https://")
     for plant in plants:
         imgs = plant.get("images", [])
         clean_imgs = []
