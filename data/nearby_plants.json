@@ -1,0 +1,89 @@
+[
+  {
+    "botanical_name": "Centalla asiatica (L.) ",
+    "latitude": 27.1553695,
+    "longitude": 93.7632308,
+    "location_description": "front of university mini canteen",
+    "specimen_photo": "data/images/user_photos/Centalla asiatica.JPEG",
+    "notes": "Growing along the iron fence, currently flowering."
+  },
+  {
+    "botanical_name": "Psidium guajava L. ",
+    "latitude": 27.1548191,
+    "longitude": 93.7647962,
+    "location_description": "In front of Panyor halls of residence hostel",
+    "specimen_photo": "data/images/user_photos/Psidium guajava.JPEG",
+    "notes": "Shaded area under the canopy."
+  },
+  {
+    "botanical_name": "Mimosa pudica (Linn.)",
+    "latitude": 27.1556180,
+    "longitude": 93.7622306,
+    "location_description": "In front of shiv mandir",
+    "specimen_photo": "data/images/user_photos/Mimosa pudica (Linn.).JPEG",
+    "notes": "Growing in the grass near the gate in front of Shiv Mandir."
+  },
+  {
+    "botanical_name": "Hibiscus rosa sinensis (L.)",
+    "latitude": 27.1554480,
+    "longitude": 93.7605311,
+    "location_description": "Approximately 30 meters ahead of Shiv Mandir.",
+    "specimen_photo": "data/images/user_photos/Hibiscus rosa sinensis (L.).JPEG",
+    "notes": "In left side of road."
+  },
+  {
+    "botanical_name": "Murraya koenighii (Linn.)",
+    "latitude": 27.1575529,
+    "longitude": 93.7636039,
+    "location_description": "In front of TT14 Apartment building",
+    "specimen_photo": "data/images/user_photos/Murraya koenighii (Linn.).JPEG",
+    "notes": "Growing among dense shrubs near a mesh fence."
+  },
+  {
+    "botanical_name": "Bryophyllum  pinnata (Lam.)",
+    "latitude": 27.1575529,
+    "longitude": 93.7636039,
+    "location_description": "In front of TT14 Apartment building",
+    "specimen_photo": "data/images/user_photos/Bryophyllum  pinnata (Lam.).JPEG",
+    "notes": "Growing among surrounding plants near the fence line."
+  },
+  {
+    "botanical_name": "Artocarpus heterophyllus Lam.",
+    "latitude": 27.1553522,
+    "longitude": 93.7605311,
+    "location_description": "front of university mini canteen",
+    "specimen_photo": "data/images/user_photos/Artocarpus heterophyllus Lam..JPEG",
+    "notes": "Growing as a mature tree in an open area with dense surrounding vegetation."
+  },
+  {
+    "botanical_name": "Calotropis procera (Ait.) R.Br.",
+    "latitude": 27.1515975,
+    "longitude": 93.7679820,
+    "location_description": "In front of E Sector colony",
+    "specimen_photo": "data/images/user_photos/Calotropis procera (Ait.) R.Br..JPEG",
+    "notes": "Growing as a shrub in a garden beside the residence."
+  },
+  {
+    "botanical_name": "Catharanthus roseus",
+    "latitude": 27.1531915,
+    "longitude": 93.7675528,
+    "location_description": "In front of Health Center",
+    "specimen_photo": "data/images/user_photos/Catharanthus roseus.JPEG",
+    "notes": "Growing near the entrance of the health center, currently flowering.."
+  },
+  {
+    "botanical_name": "Euphorbia nerifolia (L.) ",
+    "latitude": 27.1532634,
+    "longitude": 93.7677580,
+    "location_description": "Near Health Center",
+    "specimen_photo": "data/images/user_photos/Euphorbia nerifolia (L.).JPEG",
+    "notes": "Growing on the right side, a few steps before the entrance to the health center."
+  },
+  {
+    "botanical_name": "Tamarindus indica (L.)",
+    "latitude": 27.1481127,
+    "longitude": 93.7685627,
+    "location_description": "Near University Canteen",
+    "specimen_photo": "data/images/user_photos/Tamarindus indica (L.).JPEG"
+  }
+]

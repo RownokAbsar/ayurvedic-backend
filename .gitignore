@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environments
+.env
+.env.local
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Streamlit/Frontend
+.streamlit/
+
+# IDEs and OS files
+.vscode/
+.idea/
+.DS_Store
+__MACOSX/
+
+# Project Specific Data & Caches
+data/audio_cache/
+data/vector_store/
+*.pdf
+
+# Mobile specific ignores are handled in mobile/.gitignore, but adding a few global fallbacks
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.pem
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Mobile / Expo specific
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/expo-env.d.ts
+mobile/.kotlin/
+mobile/.metro-health-check*
+mobile/*.tsbuildinfo
+mobile/ios/
+mobile/android/
+*.orig.*
+
